@@ -1,0 +1,84 @@
+body{
+	 background: #243d4c33;
+	}
+	.container {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+	}
+	.btn-modal{
+	background: #04779a;
+    border: #04779a;
+    padding: 12px;
+    padding-left: 5%;
+    color: #fff;
+    padding-right: 5%;
+    font-size: 16px;
+    margin-top: 15%;
+    cursor: pointer;
+	}
+	.modal-overlay{
+    position: fixed;
+    z-index: 9999;
+   	width: 100%;
+   	top: 0;
+   	left: 0;
+   	right: 0;
+   	bottom: 0;
+    display: none;
+    background: rgba(43, 46, 56, 0.9);
+    animation-name: fadeIn;
+	animation-timing-function: ease-in;
+	animation-duration: 0.5s;
+	}
+	@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+ }
+.modal-content{
+	background: #fff;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2%;
+}
+.cancel{
+    background: red;
+    border: red;
+    color: #fff;
+    padding: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    cursor: pointer;
+
+}
+.ok{
+	background: green;
+	border: green;
+	color: #fff;
+    padding: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    cursor: pointer;
+}
+.close{
+	display: table;
+    font-size: 17px;
+    color: #86827c;
+    font-weight: 600;
+    cursor: pointer;
+}
+.close:hover{
+	color: #000;
+}
+p.content{
+	line-height: 24px;
+    color: #5d5c5c;
+    font-family: sans-serif;
+    margin-bottom: 4%;
+    margin-top: 4%;
+}
